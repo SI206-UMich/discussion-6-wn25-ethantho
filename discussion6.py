@@ -84,7 +84,7 @@ def get_month_avg(d):
         for month, value in y_d.items():
             total += float(value)
             count += 1
-        ret_dict[year] = int(total / count)
+        ret_dict[year] = round(total / count)
     return ret_dict
 
 class dis7_test(unittest.TestCase):
